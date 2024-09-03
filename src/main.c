@@ -4,12 +4,15 @@
  *  Counting entered characters
  */
 
-int main(int argc, char* argv[])
+int main()
 {
-    long nc;
-    nc = 0;
-    while (getchar() != EOF)
+    long nc = 0;
+    int c;
+    while ((c = getchar()) != EOF)
+    {
         ++nc;
-    printf("%ld\n", nc);
+        printf("\nCharacter: %c, Count: %ld", c, nc); // Debugging output
+    }
+    printf("\nCharacters entered: %ld", nc);
     return 0;
 }
