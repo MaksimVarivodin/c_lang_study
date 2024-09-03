@@ -9,19 +9,9 @@ int main()
     printf(" | %10s | -- | %10s |\n", "", "");
     printf(" | %10s | => | %10s |\n", "Fahrenheit", "Celsius");
     printf(" | %10s | -- | %10s |\n", "", "");
-    float fahr, celsius;
-    int lower, upper, step;
-    lower = 0; /* lower boundary for temperature table */
-    upper = 300; /* upper boundary */
-    step = 20; /* step */
-    fahr = lower;
-
-    while (fahr <= upper)
-    {
-        celsius = 5 * (fahr - 32) / 9;
-        printf(" | %10.2f | => | %10.2f |\n", fahr, celsius);
-        fahr = fahr + step;
-    }
+    int fahr{0};
+    for (; fahr <= 300; fahr = fahr + 20)
+        printf("%3d %6.1f\n", fahr, (5.0 / 9.0) * (fahr - 32));
 
     return 0;
 }
