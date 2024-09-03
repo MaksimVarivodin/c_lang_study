@@ -1,13 +1,15 @@
 #include <stdio.h>
 
 /*
- *  Copying input to output
+ *  Counting entered characters
  */
 
 int main(int argc, char* argv[])
 {
-    int c;
-    while ((c = getchar()) != EOF)
-        putchar(c);
+    long nc;
+    nc = 0;
+    while (getchar() != EOF)
+        ++nc;
+    printf("%ld\n", nc);
     return 0;
 }
