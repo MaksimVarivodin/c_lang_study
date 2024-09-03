@@ -3,4 +3,4 @@ project(c_study C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(c_study main.c)
+add_executable(c_study src/main.c)
