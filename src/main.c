@@ -6,13 +6,10 @@
 
 int main()
 {
-    long nc = 0;
-    int c;
-    while ((c = getchar()) != EOF)
-    {
-        ++nc;
-        printf("\nCharacter: %c, Count: %ld", c, nc); // Debugging output
-    }
-    printf("\nCharacters entered: %ld", nc);
+    double nc;
+    printf("Enter symbols:");
+    for (nc = 0; getchar() != EOF; ++nc);
+
+    printf("Found symbols:%.0f\n", nc);
     return 0;
 }
