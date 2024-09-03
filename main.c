@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /*
  * Printing temperature table by Fahrenheit and Celsius
  * for "fahr" from 0 to 300
