@@ -6,13 +6,8 @@
 
 int main(int argc, char* argv[])
 {
-    int c = 0;
-    c = getchar();
-    while (c != EOF)
-    {
+    int c;
+    while ((c = getchar()) != EOF)
         putchar(c);
-        printf(" ");
-        c = getchar();
-    }
     return 0;
 }
