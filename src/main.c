@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 /*
- *  Counting entered characters
+ *  Counting entered lines
  */
 
 int main()
 {
-    double nc;
-    printf("Enter symbols:");
-    for (nc = 0; getchar() != EOF; ++nc);
-
-    printf("Found symbols:%.0f\n", nc);
+    int c, nl;
+    nl = 0;
+    while ((c = getchar()) != EOF)
+        if (c == '\n')
+            ++nl;
+    printf ("%d\n", nl);
     return 0;
 }
